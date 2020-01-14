@@ -1,0 +1,17 @@
+[debug] [2019-08-23T10:07:29.942Z] ----------------------------------------------------------------------
+[debug] [2019-08-23T10:07:30.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-23T10:07:30.055Z] CLI Version:   7.2.4
+[debug] [2019-08-23T10:07:30.055Z] Platform:      win32
+[debug] [2019-08-23T10:07:30.055Z] Node Version:  v10.16.0
+[debug] [2019-08-23T10:07:31.315Z] Time:          Fri Aug 23 2019 12:07:30 GMT+0200 (GMT+02:00)
+[debug] [2019-08-23T10:07:31.315Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-23T10:07:31.739Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-23T10:07:31.742Z] > authorizing via signed-in user
+[debug] [2019-08-23T10:07:31.742Z] [iam] checking project stage-48fcf for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2019-08-23T10:07:31.748Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/stage-48fcf:testIamPermissions  
+
+[debug] [2019-08-23T10:07:34.213Z] Error: getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com cloudresourcemanager.googleapis.com:443

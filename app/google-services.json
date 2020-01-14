@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "939419450935",
+    "firebase_url": "https://stage-48fcf.firebaseio.com",
+    "project_id": "stage-48fcf",
+    "storage_bucket": "stage-48fcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939419450935:android:4e17910c27f096dd14c9b2",
+        "android_client_info": {
+          "package_name": "com.example.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939419450935-00piaeqpal2ac4ufkq8v1tcr3m186a4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVySBkqjuaBFWOcuQiQ7DTOxwIdQ94kUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939419450935-00piaeqpal2ac4ufkq8v1tcr3m186a4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

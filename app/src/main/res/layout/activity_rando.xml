@@ -1,0 +1,44 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".RandoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#83B1AC"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <EditText
+                        android:id="@+id/edt_search"
+                        android:elevation="@dimen/dimens_1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimens_10dp"
+                        android:layout_marginBottom="@dimen/dimens_10dp"
+                        android:background="@drawable/search_round_card"
+                        android:drawableRight="@mipmap/search_icon"
+                        android:hint="@string/recherche"
+                        android:textColor="#000"
+                        android:textColorHint="#757070"
+                        android:drawableEnd="@mipmap/search_icon" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

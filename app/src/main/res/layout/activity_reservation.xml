@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReservationActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar"
+                android:fitsSystemWindows="true"
+                android:layout_height="@dimen/app_bar_height"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/toolbar_layout"
+                    android:fitsSystemWindows="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nature"
+                    app:toolbarId="@+id/toolbar"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:contentScrim="?attr/colorPrimary">
+                <ImageView
+                        android:id="@+id/btn_menu_res"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimens_50dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="280dp"
+                        android:background="@mipmap/menu_logo"/>
+
+<!--                <androidx.appcompat.widget.Toolbar-->
+<!--                        android:id="@+id/toolbar"-->
+<!--                        android:layout_height="?attr/actionBarSize"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        app:layout_collapseMode="pin"-->
+<!--                        app:popupTheme="@style/AppTheme.PopupOverlay">-->
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+<!--                            android:id="@+id/logo"-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/logo" />-->
+
+<!--                    <androidx.appcompat.widget.AppCompatImageView-->
+<!--                            android:id="@+id/logout"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="230dp"-->
+<!--                            android:src="@mipmap/logout" />-->
+<!--                </androidx.appcompat.widget.Toolbar>-->
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                app:cardBackgroundColor="#EBE7E7"
+                app:cardElevation="5dp"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/dimens_20dp">
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutFirstName"
+                    android:layout_marginTop="@dimen/dimens_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputEditTextFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_first_name"
+                        android:inputType="textPersonName"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputEditTextLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_last_name"
+                        android:inputType="textPersonName"
+                        android:maxLength="25"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputEditTextNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_Number"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="220dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputEditTextTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_tel"
+                        android:inputType="phone"
+                        android:maxLength="8"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="290dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputEditTextEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_email"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimary" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioButton
+                    android:id="@+id/acceptNotif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="360dp"
+                    android:text="Recevoir des notifications" />
+
+        </androidx.cardview.widget.CardView>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="@dimen/dimens_20dp"
+            android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButtonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTextHint"
+                android:text="@string/reset" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButtonConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_50dp"
+                android:background="@color/colorTextHint"
+                android:text="@string/confirm" />
+    </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>
+
